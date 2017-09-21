@@ -7,6 +7,6 @@ describe('a then b', function() {
         expect(aThenB('A')).to.equal('B');
     });
     it('does not return B for something other than A', function() {
-        expect(aThenB('X')).to.be.null;
+        expect(aThenB('X')).to.not.equal('B');
     });
 });
